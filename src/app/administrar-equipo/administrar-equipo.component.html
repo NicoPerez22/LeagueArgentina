@@ -1,85 +1,151 @@
 <div class="super_container">
 
-	<!-- Header -->
-	
-
-    <app-navbar></app-navbar>
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="fondoArriba" style="background-image:url(assets/images/575203.png)">
-		<h1 class="center">ADMINISTRAR EQUIPO</h1>
-	</div>
-	<ul>
-			<li><a [routerLink]="['/torneo']" routerLinkActive="router-link-active">Inicio</a></li>
+	<div class="card back-color">
+		<ul>
+			<li><a (click)="showInicioFn()" routerLinkActive="router-link-active">Inicio</a></li>
 			<li><a [routerLink]="['/administrar-equipo/plantilla']" routerLinkActive="router-link-active">Plantilla</a></li>
 			<li><a [routerLink]="['/torneo/goeladores']" routerLinkActive="router-link-active">Estadisticas</a></li>
 			<li><a [routerLink]="['/torneo/asistencias']" routerLinkActive="router-link-active">Cambiar Logo</a></li>
 			<li><a [routerLink]="['/torneo/sanciones']" routerLinkActive="router-link-active">Invitar Jugador</a></li>
 			<li><a [routerLink]="['/administrar-equipo/reportarpartido']" routerLinkActive="router-link-active">Reportar Partido</a></li>
-	</ul>
-
-
-	<!-- <div class="container-fluid">
-		<div class="col-md-6">
-			<h2 style="text-align:center">DT</h2>
-
-			<div class="card">
-			<img src="assets/images/58_g.png" alt="John" style="width:100%">
-			<h3>John Doe</h3>
-			<p class="title">Estudiantes Rio4 eSports</p>
-			<p>MCO</p>
-			<div style="margin: 24px 0;">
-				<a href="#"><i class="fa fa-dribbble"></i></a> 
-				<a href="#"><i class="fa fa-twitter"></i></a>  
-				<a href="#"><i class="fa fa-linkedin"></i></a>  
-				<a href="#"><i class="fa fa-facebook"></i></a> 
-			</div>
-			<p><button>Ver Pefil</button></p>
-			</div>
-		</div>
+		</ul>
 	</div>
-	<div class="container-fluid">
-		<div class="col-md-6">
-				<h2 style="text-align:center">SUB DT</h2>
+
+	<ng-container *ngIf="showInicio">
+		<div class="row" style="margin-top:50px ;">
+			<div class="col-2"></div>
+			<div class="card-event left-color col-8 text-center">
+				<div style="margin-top:30px ;">
+					<h4 style="color: white;">Proximo partido</h4>
+				</div>
+				<div class="row" style="margin-top: 30px;">
+
+					<div class="col-1"></div>
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<h5 style="color: white ;">1</h5>
+						</div>
+					</div>
+
+					<div class="col">
+						<img src="../../assets/images/GELP.png" width="150" height="150" style="margin-bottom:40px ;">
+					</div>
 	
-				<div class="card">
-				<img src="assets/images/58_g.png" alt="John" style="width:100%">
-				<h3>John Doe</h3>
-				<p class="title">Estudiantes Rio4 eSports</p>
-				<p>MCO</p>
-				<div style="margin: 24px 0;">
-					<a href="#"><i class="fa fa-dribbble"></i></a> 
-					<a href="#"><i class="fa fa-twitter"></i></a>  
-					<a href="#"><i class="fa fa-linkedin"></i></a>  
-					<a href="#"><i class="fa fa-facebook"></i></a> 
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<h5 style="color: white ;">Hacha y tiza eSports</h5>
+						</div>
+					</div>
+
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<h5 style="color: white ;">VS</h5>
+						</div>
+					</div>
+
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<h5 style="color: white ;">Sportivo barracas eSports</h5>
+						</div>
+					</div>
+
+					
+					<div class="col">
+						<img src="../../assets/images/4320.png" width="150" height="150" style="margin-bottom:40px ;">
+					</div>
+
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<h5 style="color: white ;">2</h5>
+						</div>
+					</div>
+					<div class="col-1"></div>
 				</div>
-				<p><button>Ver Pefil</button></p>
-				</div>
+			</div>
+			<div class="col-2"></div>
 		</div>
-	</div> -->
-	<!-- <ngb-tabset class="tabset1">
 
+		<div class="row" style="margin-top:50px ;">
+			<!-- <div class="col-2"></div> -->
+			<div class="card-stadistic left-color col-6 text-center">
+				<div style="margin-top:30px ;">
+					<h4 style="color: white;">Maximo goleador</h4>
+				</div>
+				<div class="row" style="margin-top: 30px;">
 
-			<ngb-tab title="Invitar Jugador">
-				<ng-template ngbTabContent>
-					<li><a>Invitar Jugador</a></li>
-				</ng-template>
-			</ngb-tab>
-			<ngb-tab title="Tab 2">
-				<ng-template ngbTabContent>
-					<app-asistencias></app-asistencias>
-				</ng-template>
-			</ngb-tab>
+					<div class="col-1"></div>
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<img src="../../assets/images/58_g.png" alt="" width="150" height="200">
+						</div>
+					</div>
+	
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<h5 style="color: white ;">ElverFloresta17</h5>
+							<p>Delantero</p>
+						</div>
+					</div>
 
-			
-	</ngb-tabset> -->
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<ul class="stats">
+								<li class="d-inline-flex flex-column justify-content-center align-items-center">
+									<div id="day" class="stast-num">03</div>
+									<div class="stast-unit">Goles</div>
+								</li>
+								<li class="d-inline-flex flex-column justify-content-center align-items-center">
+									<div id="hour" class="stast-num">15</div>
+									<div class="stast-unit">Asistencias</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-	<!-- Hamburger Menu -->
+					<div class="col-1"></div>
+				</div>
+			</div>
 
+			<div class="card-stadistic left-color col-6 text-center">
+				<div style="margin-top:30px ;">
+					<h4 style="color: white;">Maximo goleador</h4>
+				</div>
+				<div class="row" style="margin-top: 30px;">
 
+					<div class="col-1"></div>
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<img src="../../assets/images/58_g.png" alt="" width="150" height="200">
+						</div>
+					</div>
+	
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<h5 style="color: white ;">ElverFloresta17</h5>
+							<p>Delantero</p>
+						</div>
+					</div>
 
-	<!-- Benefit -->
+					<div class="col" style="margin-top:50px ;">
+						<div>
+							<ul class="stats">
+								<li class="d-inline-flex flex-column justify-content-center align-items-center">
+									<div id="day" class="stast-num">03</div>
+									<div class="stast-unit">Goles</div>
+								</li>
+								<li class="d-inline-flex flex-column justify-content-center align-items-center">
+									<div id="hour" class="stast-num">15</div>
+									<div class="stast-unit">Asistencias</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-1"></div>
+				</div>
+			</div>
+			<!-- <div class="col-2"></div> -->
+		</div>
+	</ng-container>
+
 </div>

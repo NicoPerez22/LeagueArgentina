@@ -3,6 +3,9 @@
     transition: 0.3s;
     width: 25%;
     margin-left: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 10px;
 }
   
 .card:hover {
@@ -14,7 +17,7 @@ padding: 50px 16px;
 }
 
 .tn-button {
-    width: 100%;
+    width: 80%;
 }
 
 .vl {
@@ -23,7 +26,22 @@ padding: 50px 16px;
     height: 60px;
 }
 
-.container-card{
+.container-f{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.container-logo{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.container-info{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.container-follow{
     margin-top: 20px;
     margin-bottom: 25px;
 }
@@ -34,4 +52,66 @@ padding: 50px 16px;
 
 .fllowed{
     margin-right: -60px;
+}
+
+.back-color{
+    border-left-width: 6px;
+    background-color: #2b2a2a;
+    border-left-style: solid;
+    border-left-color: #e95207;
+}
+
+.back-color-card{
+    border-left-width: 6px;
+    background-color: #2b2a2a;
+    border-left-style: solid;
+    border-left-color: #e95207;
+}
+
+.back-label{
+    color: white;
+}
+
+.stats li {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    /* border-radius: 50%; */
+    /* background: #00348a; */
+    margin-right: 10px;
+}
+
+.title-stasts{
+    margin-top: 50px;
+}
+
+.stast-num{
+    font-size: 30px;
+    font-weight: 600;
+    color: #e95207;
+    margin-top: 10px;
+}
+
+.stast-unit{
+    margin-top: 12px;
+	font-size: 14px;
+	font-weight: 200;
+	color: white;
+}
+
+.card-stadistic{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 89%;
+    /* margin-left: 100px;
+    padding-left: 0px;
+    padding-right: 0px; */
+    border-radius: 10px;
+    margin-top: 140px;
+    margin-left: 90px;
+}
+
+.container-form{
+    margin-left: 25px;
+    margin-right: 25px;
 }

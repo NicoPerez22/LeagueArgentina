@@ -1,103 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Colo Shop Categories</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Colo Shop Template">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap4/bootstrap.min.css">
-<link href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
-<link rel="stylesheet" type="text/css" href="assets/styles/categories_styles.css">
-<link rel="stylesheet" type="text/css" href="assets/styles/categories_responsive.css">
-</head>
+<div class="super_container">
+  <div class="text-center">
+    <div class="card back-color text-center col-10" style="margin-top:200px;">
+      <div style="margin-top:30px ;">
+        <h3 style="color:white ;">PRIMERA DIVISION</h3>
+      </div>
 
-    <body class="algo"> 
-        
-    
-        <app-navbar></app-navbar>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="fondoArriba" style="background-image:url(assets/images/575203.png)">
-            <h1 class="center">FIVAS PRIMERA DIVISION</h1>
-        </div>
-        <ul>
-                <li><a [routerLink]="['/torneo']" routerLinkActive="router-link-active">Tabla</a></li>
-                <li><a [routerLink]="['/torneo/fechas']" routerLinkActive="router-link-active">Proximos Partidos</a></li>
-                <li><a [routerLink]="['/torneo/goeladores']" routerLinkActive="router-link-active">Goleadores</a></li>
-                <li><a [routerLink]="['/torneo/asistencias']" routerLinkActive="router-link-active">Asistidores</a></li>
-                <li><a [routerLink]="['/torneo/sanciones']" routerLinkActive="router-link-active">Sanciones</a></li>
+      <div class="nav-items-tor" style="margin-top:50px ;">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Posiciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fixture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Goleadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Asistencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Defensas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Valla menos vencida</a>
+          </li>
         </ul>
+      </div>
+    </div> 
+  </div>
 
-        <br>
-        <br>
-            <div class="alinear">
-              <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">Pos</th>
-                    <th scope="col"></th>
-                    <th scope="col">Equipo</th>
-                    <th scope="col">PTS</th>
-                    <th scope="col">G</th>
-                    <th scope="col">E</th>
-                    <th scope="col">P</th>
-                    <th scope="col">GF</th>
-                    <th scope="col">GE</th>
-                    <th scope="col">DIF</th>
-                    <th scope="col">PJ</th>
-                  </tr>
-                </thead>
-                <tbody class="colorFondo">
-                  <tr *ngFor="let rec of equipoArray">
-                    <th scope="row">{{rec.id}}</th>
-                    <td style="font-size:24px;"></td>
-                    <td>{{rec.nombre}}</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                  </tr>
-                </tbody>
-              </table>
+  <div class="text-center">
+    <div class="card back-color text-center col-10" style="margin-top:30px;">
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Equipo</th>
+              <th scope="col">PJ</th>
+              <th scope="col">G</th>
+              <th scope="col">E</th>
+              <th scope="col">P</th>
+              <th scope="col">GF</th>
+              <th scope="col">GE</th>
+              <th scope="col">DG</th>
+              <th scope="col">PTS</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let e of equipoArray">
+            <tr>
+              <th scope="row">{{e.id}}</th>
+              <td>{{e.nombre}}</td>
+              <td>23</td>
+              <td>5</td>
+              <td>45</td>
+              <td>45</td>
+              <td>45</td>
+              <td>45</td>
+              <td>45</td>
+              <td>45</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> 
+  </div>
+
+  <!-- <div class="row">
+    <div class="col">
+      <div class="text-center">
+        <div class="card back-color text-center col-10" style="margin-top:30px;">
+
+          <div style="margin-top: 20px;">
+            <h4>Maximo Goleador</h4>
+          </div>
+
+          <div class="row" style="margin-top: 20px;">
+
+            <div class="col">
+              <img src="../../assets/images/58_g.png" width="100" height="150">
             </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-      
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/styles/bootstrap4/popper.js"></script>
-<script src="assets/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="assets/plugins/easing/easing.js"></script>
-<script src="assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-<script src="assets/js/categories_custom.js"></script>
-</body>
 
-</html>
+            <div class="col-8">
+              <div>
+                <h5>ElverFloresta17</h5>
+                <p>Delantero</p>
+              </div>
+
+              <div>
+                <ul class="stats">
+                  <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                    <div id="day" class="stast-num">20</div>
+                    <div class="stast-unit">Goles</div>
+                  </li>
+                  <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                    <div id="hour" class="stast-num">15</div>
+                    <div class="stast-unit">PJ</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+    </div>
+
+    <div class="col">
+      <div class="text-center">
+        <div class="card back-color text-center col-10" style="margin-top:30px;">
+          <div style="margin-top: 20px;">
+            <h4>Maximo Asistidor</h4>
+          </div>
+
+          <div class="row" style="margin-top: 20px;">
+
+            <div class="col">
+              <img src="../../assets/images/58_g.png" width="100" height="150">
+            </div>
+
+            <div class="col-8">
+              <div>
+                <h5>NicoPerez22</h5>
+                <p>Mediocampista</p>
+              </div>
+
+              <div>
+                <ul class="stats">
+                  <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                    <div id="day" class="stast-num">20</div>
+                    <div class="stast-unit">Asistencias</div>
+                  </li>
+                  <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                    <div id="hour" class="stast-num">15</div>
+                    <div class="stast-unit">PJ</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+    </div>
+  </div> -->
+
+
+</div>

@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TorneoComponent implements OnInit {
 
-  equipoArray = [{id: 1, nombre: 'NicoPerez22'},
-  {id: 2, nombre: 'AllboysFloresta1'},
-  {id: 3, nombre: 'GrimmjowVI6'},
-  {id: 4, nombre: 'Nachoo_011'},
-  {id: 5, nombre: 'Franchy10_'},
-  {id: 6, nombre: 'Guiidow'},
-  {id: 7, nombre: 'Menardi04'},
-  {id: 8, nombre: 'Cabers'},
-  {id: 9, nombre: 'Ferpwnt'},]
+  equipoArray = [{id: 1, nombre: 'Hacha y tiza FC'},
+  {id: 2, nombre: 'Sportivo Barracas eSports'},
+  {id: 3, nombre: 'Racing club eSports'},
+  {id: 4, nombre: 'WAP eSports'},
+  {id: 5, nombre: 'Queso y dulce eSports'},
+  {id: 6, nombre: 'Gimnasia eSports'},
+  {id: 7, nombre: 'Lanus eSports'},
+  {id: 8, nombre: 'El porvenir'},
+  {id: 9, nombre: 'All boys eSports'},]
   
   constructor() { }
 

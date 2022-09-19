@@ -1,37 +1,72 @@
+<div class="text-center">
+	<div class="card-stadistic text-center back-color row">
+		<div class="col-4 title-stasts">
+			<h4 style="color:white ;">Estadisticas de jugador:</h4>
+		</div>
+		<div class="row">
+			<ul class="stats">
+				<li class="d-inline-flex flex-column justify-content-center align-items-center">
+					<div id="day" class="stast-num">03</div>
+					<div class="stast-unit">Goles</div>
+				</li>
+				<li class="d-inline-flex flex-column justify-content-center align-items-center">
+					<div id="hour" class="stast-num">15</div>
+					<div class="stast-unit">Asistencias</div>
+				</li>
+				<li class="d-inline-flex flex-column justify-content-center align-items-center">
+					<div id="minute" class="stast-num">45</div>
+					<div class="stast-unit">PJ</div>
+				</li>
+				<li class="d-inline-flex flex-column justify-content-center align-items-center">
+					<div id="second" class="stast-num">8.3</div>
+					<div class="stast-unit">Clasi</div>
+				</li>
+				<li class="d-inline-flex flex-column justify-content-center align-items-center">
+					<div id="day" class="stast-num">03</div>
+					<div class="stast-unit">Tarjeta Amarillas</div>
+				</li>
+				<li class="d-inline-flex flex-column justify-content-center align-items-center">
+					<div id="day" class="stast-num">03</div>
+					<div class="stast-unit">Tarjetas Rojas</div>
+				</li>
+				<li class="d-inline-flex flex-column justify-content-center align-items-center">
+					<div id="day" class="stast-num">03</div>
+					<div class="stast-unit">Equipo de la semana</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 <div class="super_container row">
-	<div class="card text-center col-3" style="margin-top:200px;">
+	<div class="card back-color-card text-center col-3" style="margin-top:30px;">
 		<div>
-			<img src="../../assets/images/messi.jpg" alt="Avatar" style="width:100%">
+			<img src="../../assets/images/messi.jpg" alt="Avatar" style="width:100%; border-radius: 6px">
 		</div>
-		<div class="container">
-		  <h4><b>NicoPerez22</b></h4> 
-		  <p>Mediocampista</p> 
+		<div class="container-info">
+		  <h4><b style="color: white;">NicoPerez22</b></h4> 
+		  <p style="color: white;">Mediocampista</p> 
 		</div>
 
-		<!-- <div class="container">
-			<div class="row">
-				<p>I</p>
-				<p>T</p>
-				<p>F</p>
-			</div>
-		</div> -->
-
-		<div class="container">
+		<div class="container-logo">
+			<img src="../../assets/images/icons/PSN.png" width="60" height="50" style="margin-bottom:10px ;">
+		</div>
+		
+		<div class="container-follow">
 			<div>
 				<button class="btn btn-outline-info tn-button">Seguir Perfil</button>
 			</div>
 		</div>
 
-		<div class="container-card">
+		<div class="container-f">
 			<div >
 				<div class="row">
 					<div class="col fllowed">
-						<h5><p>Seguidores: 100K</p></h5>
+						<h5><p style="color: white;">Seguidores: 100K</p></h5>
 					</div>
 					<div class="vl"></div>
 					<div class="col follwers">
-						<h5><p>Siguiendo: 100K</p></h5>
+						<h5><p style="color: white;">Siguiendo: 100K</p></h5>
 					</div>
 				</div>
 			</div>
@@ -39,35 +74,83 @@
 
 	</div>  
 
-	<div class="card text-center col-7" style="margin-top:200px;">
-		<div class="container">
-			<form>
-				<div class="form-group">
-				  	<label for="exampleInputEmail1">PSN ID</label>
-				  	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-				  	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	<div class="card text-center back-color col-7" style="margin-top:30px;">
+
+		<div class="row" style="margin-top: 40px;">
+
+			<div class="col">
+				<h4 style="color: white ;">Datos del perfil</h4>
+			</div>
+			<div *ngIf="saveButton" class="col">
+				<button class="btn btn-outline-info">Editar Perfil</button>
+			</div>
+		</div>
+		<hr>
+		<div class="container-form">
+			<form style="margin-top: 60px;">
+				<div class="row">
+					<div class="form-group col">
+						<label class="back-label">PSN ID</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					</div>
+					<div class="form-group col">
+						<label class="back-label">Nombre</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
+					<div class="form-group col">
+						<label class="back-label">Dorsal</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
 				</div>
-				<div class="form-group">
-				  	<label for="exampleInputPassword1">Nombre</label>
-				 	<input type="password" class="form-control" id="exampleInputPassword1">
+	
+				<div class="row">
+					<div class="form-group col">
+						<label class="back-label">Posicion</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					</div>
+					<div class="form-group col">
+						<label class="back-label">Rol</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
 				</div>
-				<div class="form-group form-check">
-					<label class="exampleInputEmail1" for="exampleCheck1">Posicion</label>
-				  	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+	
+				<div class="row">
+					<div class="form-group col">
+						<label class="back-label">Equipo</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					</div>
+					<div class="form-group col">
+						<label class="back-label">Plataforma</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
 				</div>
-				<div class="form-group">
-				  	<label for="exampleInputEmail1"></label>
-				  	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-				  	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	
+				<!-- <div class="row">
+					<div class="form-group col">
+						<label class="back-label">PSN ID</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					</div>
+					<div class="form-group col">
+							<label class="back-label">Nombre</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
+				</div> -->
+				<div *ngIf="saveButton">
+					<button type="submit" style="margin-top:100px ;" class="btn btn-primary">Guardar</button>
 				</div>
-				<div class="form-group">
-					<label for="exampleInputEmail1">PSN ID</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-			  	</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
+
+				<div class="row" style="margin-top: 50px;">
+
+					<div class="col" style="margin-top:50px ;">
+						<h5 style="color: white ;">Valor mercado: $4.000.000</h5>
+					</div>
+					<div class="col">
+						<img src="../../assets/images/GELP.png" width="150" height="150" style="margin-bottom:40px ;">
+					</div>
+				</div>
 			</form>
 		</div>
+
 	</div>  
 </div>
 
