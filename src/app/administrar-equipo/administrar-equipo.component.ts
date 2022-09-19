@@ -9,6 +9,7 @@ import { NgbTabset } from '@ng-bootstrap/ng-bootstrap';
 export class AdministrarEquipoComponent implements OnInit {
 
   showInicio: boolean = true;
+  showPlantilla: boolean = false;
 
   constructor() { }
 
@@ -18,7 +19,12 @@ export class AdministrarEquipoComponent implements OnInit {
   currentOrientation = 'horizontal';
 
   showInicioFn(){
-    this.showInicio = false
+    this.showInicio = true;
+    this.showPlantilla = false;
   }
   
+  showPlantillaFn(){
+    this.showPlantilla = true;
+    this.showInicio = false;
+  }
 }

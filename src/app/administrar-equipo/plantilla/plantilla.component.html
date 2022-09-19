@@ -1,132 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Colo Shop Categories</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Colo Shop Template">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap4/bootstrap.min.css">
-<link href="assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
-<link rel="stylesheet" type="text/css" href="assets/styles/categories_styles.css">
-<link rel="stylesheet" type="text/css" href="assets/styles/categories_responsive.css">
-</head>
-
-<body>
-
 <div class="super_container">
-
-	<!-- Header -->
-	
-
-    
-
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="fondoArriba" style="background-image:url(assets/images/575203.png)">
-		<h1 class="center">PLANTILLA</h1>
+	<div style="margin-left:20% ;">
+		<div class="card back-color text-center col" style="margin-top:30px;">
+		  <div>
+			<table class="table table-hover">
+			  <thead>
+				<tr>
+				  <th scope="col">#</th>
+				  <th scope="col">PSN ID</th>
+				  <th scope="col">Nombre</th>
+				  <th scope="col">Posicion</th>
+				  <th scope="col">Goles</th>
+				  <th scope="col">Asistencias</th>
+				  <th scope="col">Nacionalidad</th>
+				</tr>
+			  </thead>
+			  <tbody *ngFor="let e of equipoArray">
+				<tr>
+				  <th scope="row">{{e.id}}</th>
+				  <td>{{e.nombre}}</td>
+				  <td>23</td>
+				  <td>5</td>
+				  <td>45</td>
+				  <td>45</td>
+				  <td>45</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		</div> 
 	</div>
-	<ul>
-			<li><a [routerLink]="['/torneo']" routerLinkActive="router-link-active">Inicio</a></li>
-			<li><a [routerLink]="['/administrar-equipo/plantilla']" routerLinkActive="router-link-active">Plantilla</a></li>
-			<li><a [routerLink]="['/administrar-equipo/estadisticas']" routerLinkActive="router-link-active">Estadisticas</a></li>
-			<li><a [routerLink]="['/torneo/asistencias']" routerLinkActive="router-link-active">Cambiar Logo</a></li>
-			<li><a [routerLink]="['/torneo/sanciones']" routerLinkActive="router-link-active">Invitar Jugador</a></li>
-			<li><a [routerLink]="['/administrar-equipo/reportarpartido']" routerLinkActive="router-link-active">Reportar Partido</a></li>
-	</ul>
-	<!-- <ul>
-			<li><a [routerLink]="['/administrar-equipo/]" routerLinkActive="router-link-active">Inicio</a></li>
-			<li><a [routerLink]="['/administrar-equipo/plantilla]" routerLinkActive="router-link-active">Plantilla</a></li>
-			<li><a [routerLink]="['/administrar-equipo/estadisticas]" routerLinkActive="router-link-active">Estadisticas</a></li>
-			<li><a [routerLink]="['/administrar-equipo/cambiar-Logo]" routerLinkActive="router-link-active">Cambiar Logo</a></li>
-			<li><a [routerLink]="['/administrar-equipo/invitar-jugador]" routerLinkActive="router-link-active">Invitar Jugador</a></li>
-			<li><a [routerLink]="['/administrar-equipo/reportarpartido']" routerLinkActive="router-link-active">Reportar Partido</a></li>
-    </ul> -->
-    
-
-
-    <br>
-	<br>
-		<div class="alinear">
-		  <table class="table">
-			<thead class="thead-dark">
-			  <tr>
-				<th scope="col">PSN ID</th>
-				<th scope="col">Posicion</th>
-				<th scope="col">Nacionalidad</th>
-				<th scope="col">Apodo</th>
-				<th scope="col">Numero</th>
-				<th scope="col">Estado</th>
-				<th scope="col">Eliminar</th>
-			  </tr>
-			</thead>
-			<tbody class="colorFondo">
-			  <tr *ngFor="let rec of equipoArray">
-				<th scope="row">{{rec.id}}</th>
-				<td>{{rec.nombre}}</td>
-				<td>@mdo</td>
-				<td>@mdo</td>
-				<td>@mdo</td>
-				<td>@mdo</td>
-				<button type="button" class="btn btn-danger"></button>
-			  </tr>
-			</tbody>
-		  </table>
-		</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
-	
-	<!-- <ngb-tabset class="tabset1">
-
-
-			<ngb-tab title="Invitar Jugador">
-				<ng-template ngbTabContent>
-					<li><a>Invitar Jugador</a></li>
-				</ng-template>
-			</ngb-tab>
-			<ngb-tab title="Tab 2">
-				<ng-template ngbTabContent>
-					<app-asistencias></app-asistencias>
-				</ng-template>
-			</ngb-tab>
-
-			
-	</ngb-tabset> -->
-
-	<!-- Hamburger Menu -->
-
-	<app-footer></app-footer>
-
-
-	<!-- Benefit -->
 </div>
-
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/styles/bootstrap4/popper.js"></script>
-<script src="assets/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="assets/plugins/easing/easing.js"></script>
-<script src="assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-<script src="assets/js/categories_custom.js"></script>
-</body>
-
-</html>
 

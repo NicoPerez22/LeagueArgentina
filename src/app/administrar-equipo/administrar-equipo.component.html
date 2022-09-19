@@ -1,9 +1,9 @@
 <div class="super_container">
 
-	<div class="card back-color">
+	<div class="card back-color" style="margin-top:100px ;">
 		<ul>
 			<li><a (click)="showInicioFn()" routerLinkActive="router-link-active">Inicio</a></li>
-			<li><a [routerLink]="['/administrar-equipo/plantilla']" routerLinkActive="router-link-active">Plantilla</a></li>
+			<li><a (click)="showPlantillaFn()" routerLinkActive="router-link-active">Plantilla</a></li>
 			<li><a [routerLink]="['/torneo/goeladores']" routerLinkActive="router-link-active">Estadisticas</a></li>
 			<li><a [routerLink]="['/torneo/asistencias']" routerLinkActive="router-link-active">Cambiar Logo</a></li>
 			<li><a [routerLink]="['/torneo/sanciones']" routerLinkActive="router-link-active">Invitar Jugador</a></li>
@@ -12,7 +12,7 @@
 	</div>
 
 	<ng-container *ngIf="showInicio">
-		<div class="row" style="margin-top:50px ;">
+		<div class="row" style="margin-top:100px ;">
 			<div class="col-2"></div>
 			<div class="card-event left-color col-8 text-center">
 				<div style="margin-top:30px ;">
@@ -28,12 +28,12 @@
 					</div>
 
 					<div class="col">
-						<img src="../../assets/images/GELP.png" width="150" height="150" style="margin-bottom:40px ;">
+						<img src="../../assets/images/GELP.png" width="100" height="100" style="margin-bottom:40px ;">
 					</div>
 	
 					<div class="col" style="margin-top:50px ;">
 						<div>
-							<h5 style="color: white ;">Hacha y tiza eSports</h5>
+							<p style="color: white ;">Hacha y tiza eSports</p>
 						</div>
 					</div>
 
@@ -45,13 +45,13 @@
 
 					<div class="col" style="margin-top:50px ;">
 						<div>
-							<h5 style="color: white ;">Sportivo barracas eSports</h5>
+							<p style="color: white ;">Sportivo barracas eSports</p>
 						</div>
 					</div>
 
 					
 					<div class="col">
-						<img src="../../assets/images/4320.png" width="150" height="150" style="margin-bottom:40px ;">
+						<img src="../../assets/images/4320.png" width="100" height="100" style="margin-bottom:40px ;">
 					</div>
 
 					<div class="col" style="margin-top:50px ;">
@@ -65,87 +65,83 @@
 			<div class="col-2"></div>
 		</div>
 
-		<div class="row" style="margin-top:50px ;">
-			<!-- <div class="col-2"></div> -->
-			<div class="card-stadistic left-color col-6 text-center">
+		<!-- <div class="row" style="margin-top:50px ;">
+			<div class="col-1"></div>
+			<div class="card-stadistic left-color col-sm text-center">
 				<div style="margin-top:30px ;">
-					<h4 style="color: white;">Maximo goleador</h4>
+					<h5 style="color: white;">Maximo goleador</h5>
 				</div>
 				<div class="row" style="margin-top: 30px;">
+					<div class="col-sm" style="margin-top:0px ;">
+						<div>
+							<img src="../../assets/images/58_g.png" alt="" width="100" height="150">
+						</div>
+					</div>
+	
+					<div class="col-sm" style="margin-top:0px ;">
+						<div>
+							<h5 style="color: white ;">ElverFloresta17</h5>
+							<p>Delantero</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+			<div class="card-stadistic left-color col-sm text-center">
+				<div style="margin-top:30px ;">
+					<h5 style="color: white;">Maximo asistidor</h5>
+				</div>
+				<div class="row" style="margin-top: 0px;">
 
 					<div class="col-1"></div>
-					<div class="col" style="margin-top:50px ;">
+					<div class="col" style="margin-top:0px ;">
 						<div>
 							<img src="../../assets/images/58_g.png" alt="" width="150" height="200">
 						</div>
 					</div>
 	
-					<div class="col" style="margin-top:50px ;">
+					<div class="col" style="margin-top:0px ;">
 						<div>
 							<h5 style="color: white ;">ElverFloresta17</h5>
 							<p>Delantero</p>
 						</div>
 					</div>
 
-					<div class="col" style="margin-top:50px ;">
-						<div>
-							<ul class="stats">
-								<li class="d-inline-flex flex-column justify-content-center align-items-center">
-									<div id="day" class="stast-num">03</div>
-									<div class="stast-unit">Goles</div>
-								</li>
-								<li class="d-inline-flex flex-column justify-content-center align-items-center">
-									<div id="hour" class="stast-num">15</div>
-									<div class="stast-unit">Asistencias</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-
 					<div class="col-1"></div>
 				</div>
 			</div>
-
-			<div class="card-stadistic left-color col-6 text-center">
+			<div class="col-1"></div>
+			<div class="card-stadistic left-color col-sm text-center">
 				<div style="margin-top:30px ;">
-					<h4 style="color: white;">Maximo goleador</h4>
+					<h5 style="color: white;">Jugadores en riesgo</h5>
 				</div>
 				<div class="row" style="margin-top: 30px;">
 
 					<div class="col-1"></div>
-					<div class="col" style="margin-top:50px ;">
+					<div class="col" style="margin-top:0px ;">
 						<div>
 							<img src="../../assets/images/58_g.png" alt="" width="150" height="200">
 						</div>
 					</div>
 	
-					<div class="col" style="margin-top:50px ;">
+					<div class="col" style="margin-top:0px ;">
 						<div>
 							<h5 style="color: white ;">ElverFloresta17</h5>
 							<p>Delantero</p>
 						</div>
 					</div>
 
-					<div class="col" style="margin-top:50px ;">
-						<div>
-							<ul class="stats">
-								<li class="d-inline-flex flex-column justify-content-center align-items-center">
-									<div id="day" class="stast-num">03</div>
-									<div class="stast-unit">Goles</div>
-								</li>
-								<li class="d-inline-flex flex-column justify-content-center align-items-center">
-									<div id="hour" class="stast-num">15</div>
-									<div class="stast-unit">Asistencias</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-
 					<div class="col-1"></div>
 				</div>
 			</div>
-			<!-- <div class="col-2"></div> -->
-		</div>
+			<div class="col-1"></div>
+		</div> -->
 	</ng-container>
+
+
+	<ng-container *ngIf="showPlantilla">
+		<app-plantilla></app-plantilla>
+	</ng-container>
+	
 
 </div>
