@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-profile',
@@ -10,10 +11,15 @@ export class ProfileComponent implements OnInit {
   saveButton: boolean = false;
   showButtonFllow: boolean = false;
   showEditProfile: boolean = false;
+  userProfile;
   
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    var userId = 1
+    this.userService.getUserProfile(userId).subscribe((res) =>{
+      this.userProfile = res;
+    })
   }
 
   onFllowed(){

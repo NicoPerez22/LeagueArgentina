@@ -11,7 +11,7 @@ import { User } from '../Models/User-Model';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private Router:Router, private userService: UserService, private Aunten: AuthenticationService) { }
+  constructor(private Router:Router, private userService: UserService, private AuthenticationService: AuthenticationService) { }
 
   user = new User()
 
@@ -20,8 +20,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
   
-    // Calls service to login user to the api rest
-    this.Aunten.login(this.user.username, this.user.password)
+    this.AuthenticationService.login(this.user.username, this.user.password)
     .subscribe(
       (res: any) => {       
         console.log(res)

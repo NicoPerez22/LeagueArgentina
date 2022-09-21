@@ -6,31 +6,31 @@
 		<div class="row">
 			<ul class="stats">
 				<li class="d-inline-flex flex-column justify-content-center align-items-center">
-					<div id="day" class="stast-num">03</div>
+					<div id="minute" class="stast-num">{{ userProfile.stadistics.pj }}</div>
+					<div class="stast-unit">PJ</div>
+				</li>
+				<li class="d-inline-flex flex-column justify-content-center align-items-center">
+					<div id="day" class="stast-num">{{ userProfile.stadistics.goals }}</div>
 					<div class="stast-unit">Goles</div>
 				</li>
 				<li class="d-inline-flex flex-column justify-content-center align-items-center">
-					<div id="hour" class="stast-num">15</div>
+					<div id="hour" class="stast-num">{{ userProfile.stadistics.assist }}</div>
 					<div class="stast-unit">Asistencias</div>
-				</li>
-				<li class="d-inline-flex flex-column justify-content-center align-items-center">
-					<div id="minute" class="stast-num">45</div>
-					<div class="stast-unit">PJ</div>
 				</li>
 				<li class="d-inline-flex flex-column justify-content-center align-items-center">
 					<div id="second" class="stast-num">8.3</div>
 					<div class="stast-unit">Clasi</div>
 				</li>
 				<li class="d-inline-flex flex-column justify-content-center align-items-center">
-					<div id="day" class="stast-num">03</div>
+					<div id="day" class="stast-num">{{ userProfile.stadistics.tarjetY }}</div>
 					<div class="stast-unit">Tarjeta Amarillas</div>
 				</li>
 				<li class="d-inline-flex flex-column justify-content-center align-items-center">
-					<div id="day" class="stast-num">03</div>
+					<div id="day" class="stast-num">{{ userProfile.stadistics.tarjetR }}</div>
 					<div class="stast-unit">Tarjetas Rojas</div>
 				</li>
 				<li class="d-inline-flex flex-column justify-content-center align-items-center">
-					<div id="day" class="stast-num">03</div>
+					<div id="day" class="stast-num">{{ userProfile.stadistics.teamOfTheWeek }}</div>
 					<div class="stast-unit">Equipo de la semana</div>
 				</li>
 			</ul>
@@ -44,8 +44,8 @@
 			<img src="../../assets/images/messi.jpg" alt="Avatar" style="width:100%; border-radius: 6px">
 		</div>
 		<div class="container-info">
-		  <h4><b style="color: white;">NicoPerez22</b></h4> 
-		  <p style="color: white;">Mediocampista</p> 
+		  <h4><b style="color: white;">{{ userProfile.username }}</b></h4> 
+		  <p style="color: white;">{{ userProfile.position }}</p> 
 		</div>
 
 		<div class="container-logo">
