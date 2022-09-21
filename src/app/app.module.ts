@@ -23,6 +23,7 @@ import { PlantillaComponent } from './administrar-equipo/plantilla/plantilla.com
 import { EstadisticasEquipoComponent } from './administrar-equipo/estadisticas-equipo/estadisticas-equipo.component';
 import { CambiarlogoComponent } from './administrar-equipo/cambiarlogo/cambiarlogo.component';
 import { InvitarJugadorComponent } from './administrar-equipo/invitar-jugador/invitar-jugador.component';
+import { CrearTorneoComponent } from './torneo/crear-torneo/crear-torneo.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { InvitarJugadorComponent } from './administrar-equipo/invitar-jugador/in
     PlantillaComponent,
     EstadisticasEquipoComponent,
     CambiarlogoComponent,
-    InvitarJugadorComponent
+    InvitarJugadorComponent,
+    CrearTorneoComponent
   ],
   imports: [
     BrowserModule,

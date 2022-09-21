@@ -103,3 +103,33 @@ li a:hover {
   padding-right: 0px;
   border-radius: 10px;
 }
+
+.status{
+  background: red;
+  border-radius: 5px;
+  padding: 8px;
+  color: black;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.status-warning{
+  background: yellow;
+  border-radius: 5px;
+  padding: 8px;
+  color: black;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.line{
+  border-top: 1px solid rgb(126 122 122);
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 30px;
+}
+
+.fecha-suspension{
+  margin-top: 35px;
+  margin-bottom: -25px;
+}

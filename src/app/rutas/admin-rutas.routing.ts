@@ -13,6 +13,7 @@ import { PlantillaComponent } from '../administrar-equipo/plantilla/plantilla.co
 import { EstadisticasEquipoComponent } from '../administrar-equipo/estadisticas-equipo/estadisticas-equipo.component';
 import { CambiarlogoComponent } from '../administrar-equipo/cambiarlogo/cambiarlogo.component';
 import { InvitarJugadorComponent } from '../administrar-equipo/invitar-jugador/invitar-jugador.component';
+import { CrearTorneoComponent } from '../torneo/crear-torneo/crear-torneo.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -35,4 +36,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'torneo/goeladores',      component: GoleadoresComponent },
     { path: 'torneo/asistencias',      component: AsistenciasComponent },
     { path: 'torneo/sanciones',      component: SancionesComponent },
+    { path: 'torneo/crear-torneo',      component: CrearTorneoComponent },
 ];

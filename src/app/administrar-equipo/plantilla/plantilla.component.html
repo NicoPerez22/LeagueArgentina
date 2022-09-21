@@ -1,32 +1,37 @@
 <div class="super_container">
 	<div style="margin-left:20% ;">
 		<div class="card back-color text-center col" style="margin-top:30px;">
-		  <div>
+		<div>
+			<h4 style="color: white;">Plantel oficial</h4>
+		</div>
+		<div>
 			<table class="table table-hover">
-			  <thead>
+				<thead>
 				<tr>
-				  <th scope="col">#</th>
-				  <th scope="col">PSN ID</th>
-				  <th scope="col">Nombre</th>
-				  <th scope="col">Posicion</th>
-				  <th scope="col">Goles</th>
-				  <th scope="col">Asistencias</th>
-				  <th scope="col">Nacionalidad</th>
+					<th scope="col">#</th>
+					<th scope="col">PSN ID</th>
+					<th scope="col">Nombre</th>
+					<th scope="col">Posicion</th>
+					<th scope="col">Goles</th>
+					<th scope="col">Asistencias</th>
+					<th scope="col">Nacionalidad</th>
+					<th scope="col">Estado</th>
 				</tr>
-			  </thead>
-			  <tbody *ngFor="let e of equipoArray">
+				</thead>
+				<tbody *ngFor="let e of equipoArray">
 				<tr>
-				  <th scope="row">{{e.id}}</th>
-				  <td>{{e.nombre}}</td>
-				  <td>23</td>
-				  <td>5</td>
-				  <td>45</td>
-				  <td>45</td>
-				  <td>45</td>
+					<th scope="row">{{e.id}}</th>
+					<td>{{e.nombre}}</td>
+					<td>23</td>
+					<td>5</td>
+					<td>45</td>
+					<td>45</td>
+					<td>45</td>
+					<td><span class="status">Habilitado</span></td>
 				</tr>
-			  </tbody>
+				</tbody>
 			</table>
-		  </div>
+		</div>
 		</div> 
 	</div>
 </div>

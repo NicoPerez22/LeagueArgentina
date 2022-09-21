@@ -17,3 +17,20 @@
     border-left-style: solid;
     border-left-color: #e95207;
 }
+
+.status{
+    background: yellowgreen;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+td {
+    color: white;
+}
+
+tbody{
+    color: #e95207;
+}

@@ -23,7 +23,8 @@ export class LoginComponent implements OnInit {
     // Calls service to login user to the api rest
     this.Aunten.login(this.user.username, this.user.password)
     .subscribe(
-      res => {       
+      (res: any) => {       
+        console.log(res)
         this.Router.navigateByUrl('home')
       },
       error => {

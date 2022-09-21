@@ -115,3 +115,19 @@ padding: 50px 16px;
     margin-left: 25px;
     margin-right: 25px;
 }
+
+hr.new2 {
+    border-top: 1px solid rgb(126 122 122);
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 50px;
+}
+
+.status{
+    background: greenyellow;
+    border-radius: 5px;
+    padding: 8px;
+    color: black;
+    font-size: 15px;
+    margin-left: 15px;
+}
