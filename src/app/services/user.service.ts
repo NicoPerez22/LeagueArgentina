@@ -2,12 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { User } from '../Models/User-Model';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
 
   // public usserLogged:User;
   // private isUserLoggedIn;
+  API_URL = environment.apiBaseUrl
 
   constructor(private http: HttpClient) { 
     // this.isUserLoggedIn = false;
@@ -35,23 +38,38 @@ export class UserService {
 
   // }
   
- getAll() {
+  getAll() {
     return this.http.get<User[]>(`${environment.apiBaseUrl}secure`);
-}
+  }
 
-getById(id: number) {
+  getById(id: number) {
     return this.http.get(`${environment.apiBaseUrl}/users/${id}`);
-}
+  }
 
-register(user: User) {
+  register(user: User) {
     return this.http.post(`${environment.apiBaseUrl}/users/register`, user);
-}
+  }
 
-update(user: User) {
+  update(user: User) {
     return this.http.put(`${environment.apiBaseUrl}/users/${user.id}`, user);
-}
+  }
 
-delete(id: number) {
+  delete(id: number) {
     return this.http.delete(`${environment.apiBaseUrl}/users/${id}`);
-}
+  }
+
+  getUserProfile(idUser): Observable<any> {
+    const url = this.API_URL + "user/userProfile/"
+    return this.http.get<any>(url)
+    .pipe(
+      map(res => res)
+    )
+  }
+
+  // editNotificacion(data: NotificacionesEdit): Observable<any> {
+  //   const url = this.API_URL + "notificaciones/updateNotificacion"
+  //   return this.http
+  //     .post<ApiResponse<NotificacionesEdit[]>>(url, data)
+  //     .pipe(map(res => res.data));
+  // }
 }
