@@ -58,14 +58,14 @@ padding: 50px 16px;
     border-left-width: 6px;
     background-color: #2b2a2a;
     border-left-style: solid;
-    border-left-color: #e95207;
+    border-left-color: #c4952a;
 }
 
 .back-color-card{
     border-left-width: 6px;
     background-color: #2b2a2a;
     border-left-style: solid;
-    border-left-color: #e95207;
+    border-left-color: #c4952a;
 }
 
 .back-label{
@@ -88,7 +88,7 @@ padding: 50px 16px;
 .stast-num{
     font-size: 25px;
     font-weight: 600;
-    color: #e95207;
+    color: #c4952a;
     margin-top: 10px;
 }
 

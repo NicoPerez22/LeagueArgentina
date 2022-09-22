@@ -1,0 +1,131 @@
+<div class="super_container">
+
+    <div class="card back-color" style="margin-top:100px ;">
+          <ul>
+              <li><a (click)="showInicioFn()" routerLinkActive="router-link-active">Inicio</a></li>
+              <li><a (click)="showPlantillaFn()" routerLinkActive="router-link-active">Plantilla</a></li>
+              <li><a [routerLink]="['/torneo/goeladores']" routerLinkActive="router-link-active">Estadisticas</a></li>
+              <li><a [routerLink]="['/torneo/asistencias']" routerLinkActive="router-link-active">Cambiar Logo</a></li>
+              <li><a [routerLink]="['/torneo/sanciones']" routerLinkActive="router-link-active">Invitar Jugador</a></li>
+              <li><a [routerLink]="['/administrar-equipo/reportarpartido']" routerLinkActive="router-link-active">Reportar Partido</a></li>
+          </ul>
+      </div>
+  
+    <div class="text-center">
+      <div class="card back-color text-center col-10" style="margin-top:30px;">
+        <div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Equipo</th>
+                <th scope="col">PJ</th>
+                <th scope="col">G</th>
+                <th scope="col">E</th>
+                <th scope="col">P</th>
+                <th scope="col">GF</th>
+                <th scope="col">GE</th>
+                <th scope="col">DG</th>
+                <th scope="col">PTS</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let e of equipoArray">
+              <tr>
+                <th scope="row">{{e.id}}</th>
+                <td>{{e.nombre}}</td>
+                <td>23</td>
+                <td>5</td>
+                <td>45</td>
+                <td>45</td>
+                <td>45</td>
+                <td>45</td>
+                <td>45</td>
+                <td>45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> 
+    </div>
+  
+    <!-- <div class="row">
+      <div class="col">
+        <div class="text-center">
+          <div class="card back-color text-center col-10" style="margin-top:30px;">
+  
+            <div style="margin-top: 20px;">
+              <h4>Maximo Goleador</h4>
+            </div>
+  
+            <div class="row" style="margin-top: 20px;">
+  
+              <div class="col">
+                <img src="../../assets/images/58_g.png" width="100" height="150">
+              </div>
+  
+              <div class="col-8">
+                <div>
+                  <h5>ElverFloresta17</h5>
+                  <p>Delantero</p>
+                </div>
+  
+                <div>
+                  <ul class="stats">
+                    <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                      <div id="day" class="stast-num">20</div>
+                      <div class="stast-unit">Goles</div>
+                    </li>
+                    <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                      <div id="hour" class="stast-num">15</div>
+                      <div class="stast-unit">PJ</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      
+      </div>
+  
+      <div class="col">
+        <div class="text-center">
+          <div class="card back-color text-center col-10" style="margin-top:30px;">
+            <div style="margin-top: 20px;">
+              <h4>Maximo Asistidor</h4>
+            </div>
+  
+            <div class="row" style="margin-top: 20px;">
+  
+              <div class="col">
+                <img src="../../assets/images/58_g.png" width="100" height="150">
+              </div>
+  
+              <div class="col-8">
+                <div>
+                  <h5>NicoPerez22</h5>
+                  <p>Mediocampista</p>
+                </div>
+  
+                <div>
+                  <ul class="stats">
+                    <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                      <div id="day" class="stast-num">20</div>
+                      <div class="stast-unit">Asistencias</div>
+                    </li>
+                    <li class="d-inline-flex flex-column justify-content-center align-items-center">
+                      <div id="hour" class="stast-num">15</div>
+                      <div class="stast-unit">PJ</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      
+      </div>
+    </div> -->
+  
+  
+  </div>

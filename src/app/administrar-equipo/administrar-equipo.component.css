@@ -53,18 +53,18 @@ li a:hover {
   border-bottom-width: 4px;
   background-color: #2b2a2a;
   border-bottom-style: solid;
-  border-bottom-color: #e95207;
+  border-bottom-color: #c4952a;
 }
 
 .left-color{
   background-color: #2b2a2a;
   border-left-width: 4px;
   border-left-style: solid;
-  border-left-color: #e95207;
+  border-left-color: #c4952a;
 
   border-right-width: 4px;
   border-right-style: solid;
-  border-right-color: #e95207;
+  border-right-color: #c4952a;
 }
 
 
@@ -84,7 +84,7 @@ li a:hover {
 .stast-num{
   font-size: 30px;
   font-weight: 600;
-  color: #e95207;
+  color: #c4952a;
   margin-top: 10px;
 }
 

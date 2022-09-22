@@ -24,6 +24,7 @@ import { EstadisticasEquipoComponent } from './administrar-equipo/estadisticas-e
 import { CambiarlogoComponent } from './administrar-equipo/cambiarlogo/cambiarlogo.component';
 import { InvitarJugadorComponent } from './administrar-equipo/invitar-jugador/invitar-jugador.component';
 import { CrearTorneoComponent } from './torneo/crear-torneo/crear-torneo.component';
+import { ViewTournamentComponent } from './torneo/view-tournament/view-tournament.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { CrearTorneoComponent } from './torneo/crear-torneo/crear-torneo.compone
     EstadisticasEquipoComponent,
     CambiarlogoComponent,
     InvitarJugadorComponent,
-    CrearTorneoComponent
+    CrearTorneoComponent,
+    ViewTournamentComponent
   ],
   imports: [
     BrowserModule,
