@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
     this.Router.navigateByUrl('/login');
   }
 
-CrearCuenta() {
-  this.Router.navigateByUrl('/register')
-}
+  CrearCuenta() {
+    this.Router.navigateByUrl('/register')
+  }
 }

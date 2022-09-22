@@ -1,34 +1,15 @@
 <div class="super_container">
-  <div class="text-center">
-    <div class="card back-color text-center col-10" style="margin-top:200px;">
-      <div style="margin-top:30px ;">
-        <h3 style="color:white ;">PRIMERA DIVISION</h3>
-      </div>
 
-      <div class="nav-items-tor" style="margin-top:50px ;">
-        <ul class="nav nav-pills nav-fill">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Posiciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Fixture</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Goleadores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Asistencias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Defensas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Valla menos vencida</a>
-          </li>
-        </ul>
-      </div>
-    </div> 
-  </div>
+  <div class="card back-color" style="margin-top:100px ;">
+		<ul>
+			<li><a (click)="showInicioFn()" routerLinkActive="router-link-active">Inicio</a></li>
+			<li><a (click)="showPlantillaFn()" routerLinkActive="router-link-active">Plantilla</a></li>
+			<li><a [routerLink]="['/torneo/goeladores']" routerLinkActive="router-link-active">Estadisticas</a></li>
+			<li><a [routerLink]="['/torneo/asistencias']" routerLinkActive="router-link-active">Cambiar Logo</a></li>
+			<li><a [routerLink]="['/torneo/sanciones']" routerLinkActive="router-link-active">Invitar Jugador</a></li>
+			<li><a [routerLink]="['/administrar-equipo/reportarpartido']" routerLinkActive="router-link-active">Reportar Partido</a></li>
+		</ul>
+	</div>
 
   <div class="text-center">
     <div class="card back-color text-center col-10" style="margin-top:30px;">
