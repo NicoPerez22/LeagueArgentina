@@ -9,8 +9,8 @@ ul {
 }
   
 li {
-  float: left;
-  margin-left: 200px
+  width: 33.3333%;
+  background-color: #ec8b0c;
 }
 
 li a {
@@ -21,10 +21,8 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-  /* border-bottom: 3px solid rgb(0, 255, 191); */
+.active{
+  background-color: rgb(102, 102, 102);
 }
 
 .card {
@@ -121,9 +119,30 @@ hr.new {
 }
 
 .container-custom-teams{
+  display: flex;
+  justify-content: center;
   margin: 10px;
+  align-items: center;
 }
 
 .teams-margin{
   margin-right: 50px;
+}
+
+.preview {
+  max-width: 250px;
+}
+
+.btn-custom-file{
+  width: 200px;
+  height: 50px;
+  border: solid 3px #ec8b0c;
+  background: #ec8b0c;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.input-custom{
+  display: none;
 }

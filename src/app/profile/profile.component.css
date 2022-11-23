@@ -13,11 +13,11 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .container {
-padding: 50px 16px;
+    padding: 50px 16px;
 }
 
 .tn-button {
-    width: 80%;
+    width: 50%;
 }
 
 .vl {
@@ -58,14 +58,14 @@ padding: 50px 16px;
     border-left-width: 6px;
     background-color: #2b2a2a;
     border-left-style: solid;
-    border-left-color: #c4952a;
+    border-left-color: #ec8b0c;
 }
 
 .back-color-card{
     border-left-width: 6px;
     background-color: #2b2a2a;
     border-left-style: solid;
-    border-left-color: #c4952a;
+    border-left-color: #ec8b0c;
 }
 
 .back-label{
@@ -88,7 +88,7 @@ padding: 50px 16px;
 .stast-num{
     font-size: 25px;
     font-weight: 600;
-    color: #c4952a;
+    color: #ec8b0c;
     margin-top: 10px;
 }
 
@@ -130,4 +130,26 @@ hr.new2 {
     color: black;
     font-size: 15px;
     margin-left: 15px;
+}
+
+/* .rectangle {
+    height: 60px;
+    width: 40%;
+    background-color: #c4952a;
+} */
+
+.back-color-stasts{
+    background-color: #202020;
+    border-radius: 100px;
+    width: 100%;
+}
+
+.container-section{
+    background-color: white;
+    width: 97%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 16px;
+    border-top: solid 3px #ffffff;
+    border-bottom: solid 3px #ffffff;
 }

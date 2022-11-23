@@ -91,3 +91,28 @@ ul {
 	font-weight: 200;
 	color: #51545f;
 }
+
+.list-group-item-custom {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    /* background-color: #fff; */
+    /* border: 1px solid #fff; */
+    color: white;
+}
+
+hr.line {
+    border-top: 1px solid rgb(126 122 122);
+    /* margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 50px; */
+}
+
+h4 {
+    color: white;
+}
+
+.custom-tr{
+    color: #e95207;
+}

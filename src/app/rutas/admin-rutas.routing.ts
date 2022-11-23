@@ -14,6 +14,7 @@ import { EstadisticasEquipoComponent } from '../administrar-equipo/estadisticas-
 import { CambiarlogoComponent } from '../administrar-equipo/cambiarlogo/cambiarlogo.component';
 import { InvitarJugadorComponent } from '../administrar-equipo/invitar-jugador/invitar-jugador.component';
 import { CrearTorneoComponent } from '../torneo/crear-torneo/crear-torneo.component';
+import { ViewTournamentComponent } from '../torneo/view-tournament/view-tournament.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -37,4 +38,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'torneo/asistencias',      component: AsistenciasComponent },
     { path: 'torneo/sanciones',      component: SancionesComponent },
     { path: 'torneo/crear-torneo',      component: CrearTorneoComponent },
+    { path: 'torneo/ver-torneo',      component: ViewTournamentComponent },
 ];
