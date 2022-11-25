@@ -34,7 +34,7 @@
 	</div>
 </div> -->
 
-<div class="super_container row" style="margin-top:150px;">
+<!-- <div class="super_container row" style="margin-top:150px;">
 	<div class="card back-color-card text-center col-3">
 		<div>
 			<img src="../../assets/images/messi.jpg" alt="Avatar" style="width:100%; border-radius: 6px">
@@ -42,55 +42,50 @@
 		<div class="container-info mt-5">
 		  <h4><b style="color: white;">{{ userProfile.username }}</b></h4> 
 		  <p style="color: white;">{{ userProfile.position }}</p> 
-		</div>
+		</div> -->
 
 		<!-- <div class="container-logo">
 			<img src="../../assets/images/icons/PSN.png" width="60" height="50" style="margin-bottom:10px ;">
 		</div> -->
 		
-		<div class="container-follow" *ngIf="!showButtonFllow">
+		<!-- <div class="container-follow" *ngIf="!showButtonFllow">
 			<div>
 				<button class="btn btn-outline-info tn-button" (click)="editProfile()">Editar Perfil</button>
 			</div>
 		</div>
 
 		<div class="container-follow" *ngIf="showButtonFllow">
-			<!-- <div>
-				<button class="btn btn-outline-danger tn-button" (click)="notFollow()">Dejar de seguir</button>
-			</div> -->
+
 		</div>
 
 		<div class="row mt-5">
 			<div class="mb-5" style="flex:auto ;">
 				<h5 style="color: white ;">Estado:<span class="status">Habilitado</span></h5>
 			</div>
-			<!-- <div class="ml-6">
-				<img src="../../assets/images/HYT-IESA.png" width="75" height="75">
-			</div> -->
 		</div>
 
-	</div>  
+	</div>   -->
 
-	<div class="card text-center back-color col-7" >
+	<!-- <div class="card text-center back-color col-7" > -->
 		<!-- <div class="card-nav-profile back-color-nav-profile">
 			<ul>
 				<li><a (click)="showInicioFn()" routerLinkActive="router-link-active">Datos del perfil</a></li>
 				<li><a (click)="showPlantillaFn()" routerLinkActive="router-link-active">Historial</a></li>
 			</ul>
 		</div> -->
-
+<!-- 
 		<div class="row" style="margin-top: 40px;">
 
 			<div class="col">
 				<h4 style="color: white ;">Datos del perfil</h4>
 			</div>
-			<!-- <div class="col">
+			<div class="col">
 				<div class="ml-6">
 					<img src="../../assets/images/HYT-IESA.png" width="75" height="75">
 				</div>
-			</div> -->
-		</div>
-		<hr class="new2">
+			</div>
+		</div> -->
+		<!-- <hr class="new2">
 		<div class="container-form" *ngIf="showEditProfile">
 			<form style="margin-top: 60px;">
 				<div class="row">
@@ -128,7 +123,7 @@
 						<label class="back-label">Plataforma</label>
 						<input type="password" class="form-control" id="exampleInputPassword1">
 					</div>
-				</div>
+				</div> -->
 	
 				<!-- <div class="row">
 					<div class="form-group col">
@@ -140,15 +135,15 @@
 						<input type="password" class="form-control" id="exampleInputPassword1">
 					</div>
 				</div> -->
-				<div *ngIf="saveButton">
+				<!-- <div *ngIf="saveButton">
 					<button type="submit" style="margin-top:100px ;" class="btn btn-primary">Guardar</button>
 				</div>
 
 			</form>
-		</div>
+		</div> -->
 
 
-		<div class="container-form" *ngIf="!showEditProfile">
+		<!-- <div class="container-form" *ngIf="!showEditProfile">
 			<form style="margin-top: 10px;">
 				<div class="row">
 					<div class="form-group col-3">
@@ -188,10 +183,10 @@
 					</div>
 				</div>
 			</form>
-		</div>
+		</div> -->
 
 
-		<div class="row" style="margin-left: 5%; margin-right: 5%; margin-top: 5%;" *ngIf="!showEditProfile">
+		<!-- <div class="row card-stadistic" style="margin-left: 5%; margin-right: 5%; margin-top: 5%;" *ngIf="!showEditProfile">
 			<ul class="stats back-color-stasts">
 				<li class="d-inline-flex flex-column justify-content-center align-items-center">
 					<div id="minute" class="stast-num">{{ userProfile.stadistics.pj }}</div>
@@ -220,6 +215,88 @@
 			</ul>
 		</div>
 	</div>  
+</div> -->
+
+
+
+
+
+<div class="super_container" style="margin-top:150px;">
+	<div class="img-position">
+		<img src="../../assets/images/Nicp.png" alt="Avatar" class="img-profile">
+
+		<div style="flex-direction: column;">
+			<div style="margin-left: 10%;">
+				<h4 style="color: white;">NicoPerez22</h4>
+			</div>
+			<div style="margin-left: 10%;">
+				<h5 style="color: rgb(129, 129, 129);">Posicion: MCO</h5>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="tab-custom">
+		<ul class="nav" role="tablist">
+			<li role="presentation" class="active">
+				<a href="#perfil" data-toggle="tab" role="tab" aria-controls="perfil">Perfil</a>
+			</li>
+			<li role="presentation">
+				<a href="#estadisticas" data-toggle="tab" role="tab" aria-controls="estadisticas">Estadisticas</a>
+			</li>
+			<li role="presentation">
+				<a href="#historial" data-toggle="tab" role="tab" aria-controls="historial">Historial</a>
+			</li>
+		</ul>
+	
+		<div class="tab-content card-custom">		
+			<div role="tabpanel" id="perfil">
+				<div class="row">
+					<div class="flex-custom-label">
+						<div style="margin-right: 1%; margin-left: 3%; margin-top: 3%;">
+							<h5 style="color: white;">ID:</h5>
+						</div>
+						<div style=" margin-top: 3%;">
+							<h5 style="color: white;">NicoPerez22</h5>
+						</div>
+					</div>
+	
+					<div class="flex-custom-label">
+						<div style="margin-right: 1%; margin-left: 3%;">
+							<h5 style="color: white;">Nombre:</h5>
+						</div>
+						<div>
+							<h5 style="color: white;">Nicolas Perez</h5>
+						</div>
+					</div>
+	
+					<div class="flex-custom-label">
+						<div style="margin-right: 1%; margin-left: 3%;">
+							<h5 style="color: white;">Dorsal:</h5>
+						</div>
+						<div>
+							<h5 style="color: white;">10</h5>
+						</div>
+					</div>
+
+					<div class="flex-custom-logo">
+						<div>
+							<h5 style="color: white;">Equipo Actual</h5>
+						</div>
+						<div>
+							<img src="../../assets/images/HYT-IESA.png" width="100px" height="100px">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		
+			<div role="tabpanel" id="estadisticas">
+			</div>
+
+			<div role="tabpanel" id="historial">
+			</div>
+		</div>
+	</div>
 </div>
-
-
